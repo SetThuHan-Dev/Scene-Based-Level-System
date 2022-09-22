@@ -176,11 +176,9 @@ public class LevelManager : MonoBehaviour
     }
     
 }
-```
 
 > Example Class which is not DontDestroyOnLoad
 
-```csharp
 [System.Serializable]
 public class LifeCount
 {
