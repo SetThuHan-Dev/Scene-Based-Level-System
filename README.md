@@ -9,7 +9,7 @@ Re-useable codes for saved level system when levels come with many scenes
 > Saved Current Level on Application Quit
 
 ### Preview -- In Scene
-![Ss](https://user-images.githubusercontent.com/113447169/191726112-3eb9a82b-6dba-4f58-a145-011a00047d33.png)
+![Ss](https://user-images.githubusercontent.com/113447169/191726577-d6af5f1a-4393-47b9-9bce-0e85045ec091.png)
 
 
 ```csharp
