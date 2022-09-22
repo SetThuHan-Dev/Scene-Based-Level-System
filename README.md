@@ -1,16 +1,19 @@
 # Scene-Based-Level-System
 Re-useable codes for saved level system when levels come with many scenes
-///
+
+### Purpose: for someone who wants to Destroy all gameObjects and load a new scene by saving and reloading variables in Json or PlayerPref
+
+> This LevelManager mustn't be DontDestroyOnLoad and each scene must include this LevelManager
+> Scene 0 as Entry
+> And Code starts to load Scene 1
+> Saved Current Level on Application Quit
+
+```csharp
 using UnityEngine;
 using Sabresaurus.PlayerPrefsUtilities;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// Purpose: for someone who wants to Destroy all gameObjects and load a new scene by saving and reloading variables in Json or PlayerPref
-// This LevelManager mustn't be DontDestroyOnLoad and each scene must include this LevelManager
-// Scene 0 as Entry
-// And Code starts to load Scene 1
-// Saved Current Level on Application Quit
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
@@ -173,8 +176,11 @@ public class LevelManager : MonoBehaviour
     }
     
 }
+```
 
-//Example Class which is not DontDestroyOnLoad
+> Example Class which is not DontDestroyOnLoad
+
+```csharp
 [System.Serializable]
 public class LifeCount
 {
@@ -242,3 +248,4 @@ public class LifeCount
     }
 
 }
+```
