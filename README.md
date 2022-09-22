@@ -177,7 +177,7 @@ public class LevelManager : MonoBehaviour
     
 }
 
-> Example Class which is not DontDestroyOnLoad
+/// Example Class which is not DontDestroyOnLoad
 
 [System.Serializable]
 public class LifeCount
